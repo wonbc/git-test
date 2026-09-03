@@ -3,6 +3,8 @@ import oracledb
 from dataclasses import dataclass
 from typing import List
 
+# MSSQL 연결 설정
+
 # 데이터 구조체 정의
 @dataclass
 class Order:
@@ -73,6 +75,7 @@ def fetch_orders():
     )
     ORDER BY a.orderdate
     """
+
     
     conn = get_db_connection()
     cursor = conn.cursor()

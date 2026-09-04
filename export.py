@@ -26,6 +26,7 @@ def get_mssql_connection():
      )
     return conn
 
+
 # Oracle 연결 설정
 def get_oracle_connection():
     """
